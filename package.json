@@ -1,0 +1,22 @@
+{
+  "name": "system-design-plugin",
+  "version": "0.1.9",
+  "private": true,
+  "description": "대화로 설계 판단을 구체화하고 기록하는 개인용 플러그인",
+  "type": "module",
+  "engines": {
+    "node": ">=26.5.0 <27"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test build/tests/*.test.js",
+    "package": "npm run build && node scripts/package.mjs",
+    "check": "npm test && npm run package",
+    "benchmark:tokens": "npm run build && node scripts/token-benchmark.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "js-tiktoken": "^1.0.21",
+    "typescript": "^6.0.0"
+  }
+}

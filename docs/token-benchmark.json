@@ -1,0 +1,51 @@
+{
+  "method": "Synthetic three-answer topic, same final summary/accepted ADR/next question/Obsidian note. Counts serialized command+input and response JSON only, without shell wrappers. Variable IDs, hashes, dates and fixture paths normalized.",
+  "encoding": "o200k_base (comparison only; not billed model usage)",
+  "before": {
+    "calls": 12,
+    "inputTokens": 803,
+    "outputTokens": 6303,
+    "status": {
+      "full": 657,
+      "compact": 279
+    },
+    "hook": {
+      "before": 239,
+      "after": 100
+    }
+  },
+  "after": {
+    "calls": 1,
+    "inputTokens": 277,
+    "outputTokens": 223,
+    "status": {
+      "full": 688,
+      "compact": 279
+    },
+    "hook": {
+      "before": 239,
+      "after": 100
+    }
+  },
+  "reductionPercent": {
+    "calls": 91.7,
+    "input": 65.5,
+    "output": 96.5,
+    "combined": 93
+  },
+  "instructionTokens": {
+    "current": 1420,
+    "before": 1569,
+    "reductionPercent": 9.5
+  },
+  "startupGuideTokens": {
+    "before": 4486,
+    "after": 2492
+  },
+  "runtime": "Node v26.3.0 on current host; declared engine >=26.5.0 <27 unchanged",
+  "tokenizer": "js-tiktoken 1.0.21 (MIT), dev dependency only",
+  "tests": {
+    "passed": 81,
+    "failed": 0
+  }
+}
